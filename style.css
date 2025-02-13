@@ -81,6 +81,15 @@ body {
     transition: background 0.3s;
 }
 
+.container-principal__links__link:hover {
+    background-color: #BF0D18;
+}
+
+.container-principal__links__link:hover i {
+    color: #FFFFFF;
+}
+
+
 .container-principal__links__link i {
     font-size: 32px;
     color: #BF0D18;
