@@ -7,9 +7,24 @@
 }
 
 body {
-    height: 100vh;
     background-color: #000000;
     color: #F6F6F6;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 8%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #BF0D18;
 }
 
 .titulo-destaque {
@@ -17,7 +32,7 @@ body {
 }
 
 .container-principal {
-    margin: 10%;
+    padding: 5% 8%;
     display: flex;
     align-items: flex-start; /* Alinha os itens ao topo */
     justify-content: space-between;
@@ -29,8 +44,9 @@ body {
     border-radius: 16px;
     position: relative;
     z-index: 2;
-    margin-top: -20px; /* Ajuste para alinhar com o título */
+    margin-top: 60px; /* Ajuste fino para alinhar com a terceira linha do título */
 }
+
 
 .container-principal__conteudo {
     width: 615px;
@@ -97,8 +113,8 @@ body {
 
 .estrela-vermelha {
     position: absolute;
-    top: 260px;
-    right: 190px;
+    top: 324px;
+    right: 160px;
     z-index: 3;
 }
 
@@ -107,20 +123,31 @@ body {
     z-index: 1;
     width: 466px;
     height: 526px;
-    left: 800px;
-    top: 85px;
+    left: 802px;
+    top: 159px;
 }
 
 .efeito-visual2 {
     position: absolute;
-    right: 200px;
-    top: 590px;
+    right: 174px;
+    top: 668px;
     z-index: 3;
 }
 
 .efeito-visual1 {
     position: absolute;
-    top: 285px;
-    right: 209px;
+    top: 358px;
+    right: 187px;
     z-index: 3;
+}
+
+.rodape {
+    padding: 24px;
+    color: #F6F6F6;
+    background-color: #BF0D18;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
 }
