@@ -161,7 +161,7 @@ body {
     font-weight: 400;
 }
 
-@media (max-width: 768px) { /* Ajuste a largura conforme necessário */
+@media (max-width: 480px) { /* Ajuste a largura conforme necessário */
     
     .cabecalho {
         padding: 10%;
