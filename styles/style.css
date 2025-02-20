@@ -180,8 +180,10 @@ body {
     }
 
     .container-principal__conteudo {
-        width: auto; /* Faz o conteúdo ocupar toda a largura */
-        padding: 0 5%; /* Adiciona um pouco de espaçamento nas laterais */
+        width: 100%; /* Faz o conteúdo ocupar toda a largura */
+        max-width: 90%; /* Limita a largura para não ficar muito esticado */
+        text-align: center; /* Centraliza o texto */
+        margin: 0 auto; /* Garante que fique centralizado */
     }
 
     .container-principal__conteudo__titulo {
