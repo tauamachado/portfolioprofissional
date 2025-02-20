@@ -176,7 +176,7 @@ body {
         display: flex;
         flex-direction: column-reverse; /* Alinha os itens em coluna */
         align-items: center; /* Centraliza os itens horizontalmente */
-        padding: 5%;
+        padding: 5% 5%;
     }
 
     .container-principal__conteudo {
