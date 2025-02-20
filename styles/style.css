@@ -214,5 +214,57 @@ body {
     }
 }
 
+@media (max-width: 800px) {  
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container-principal {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 5% 5%;
+    }
+
+    .container-principal__conteudo {
+        width: 100%;
+        max-width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .container-principal__conteudo__titulo {
+        font-size: 28px; /* Um pouco maior para telas de tablet */
+    }
+
+    .imagem-principal {
+        width: 90%; /* Mantém a imagem um pouco menor que no mobile */
+        height: auto;
+    }
+
+    .container-principal__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-principal__links__navegacao {
+        width: 400px; /* Pequeno ajuste na largura dos botões */
+        height: 72px;
+        margin: 12px 0;
+        padding: 12px;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
