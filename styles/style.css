@@ -31,7 +31,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -42,10 +42,11 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .container-principal__conteudo {
-    width: 615px;
+    width: 50%;
     margin-right: 58px;
     display: flex;
     flex-direction: column;
@@ -54,7 +55,7 @@ body {
 }
 
 .container-principal__conteudo__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .container-principal__conteudo__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -77,18 +78,18 @@ body {
 .container-principal__link__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.container-principal__links__link {
+.container-principal__links__navegacao {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
     border: 2px solid var(--cor-terciaria);
-    width: 378px;
+    width: 50%;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 15px 0;
     text-decoration: none;
@@ -97,16 +98,16 @@ body {
     transition: background 0.3s;
 }
 
-.container-principal__links__link:hover {
-    background-color: var(--cor-terciaria);
+.container-principal__links__navegacao:hover {
+    background-color: #BF0D18;
 }
 
-.container-principal__links__link:hover i {
+.container-principal__links__navegacao:hover i {
     color: #FFFFFF;
 }
 
-.container-principal__links__link i {
-    font-size: 32px;
+.container-principal__links__navegacao i {
+    font-size: 2rem;
     color: var(--cor-terciaria);
 }
 
@@ -114,12 +115,9 @@ body {
     width: 488px;
     height: 550px;
     border-radius: 16px;
-    position: relative;
-    z-index: 2;
-    margin-top: 60px;
 }
 
-.estrela-vermelha {
+/* .estrela-vermelha {
     position: absolute;
     top: 324px;
     right: 160px;
@@ -147,6 +145,10 @@ body {
     right: 174px;
     top: 668px;
     z-index: 3;
+} */
+
+.container-principal__imagem {
+    width: 50%;
 }
 
 .rodape {
@@ -155,7 +157,60 @@ body {
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
+
+@media (max-width: 768px) { /* Ajuste a largura conforme necessário */
+    
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        display: flex;
+        justify-content: center; /* Centraliza os links */
+        flex-wrap: wrap; /* Permite que os links se movam para a linha seguinte se necessário */
+    }
+
+    .container-principal {
+        display: flex;
+        flex-direction: column-reverse; /* Alinha os itens em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        padding: 5%;
+    }
+
+    .container-principal__conteudo {
+        width: auto; /* Faz o conteúdo ocupar toda a largura */
+        padding: 0 5%; /* Adiciona um pouco de espaçamento nas laterais */
+    }
+
+    .container-principal__conteudo__titulo {
+        font-size: 25px;
+    }
+
+    .imagem-principal {
+        width: 100%; /* Faz a imagem ocupar toda a largura */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .container-principal__links {
+        display: flex; /* Ativa o flexbox */
+        flex-direction: column; /* Alinha os botões em coluna */
+        align-items: center; /* Centraliza os botões horizontalmente */
+    }
+
+    .container-principal__links__navegacao {
+        width: 378px; /* Define a largura do botão */
+        height: 68px; /* Define a altura do botão */
+        margin: 10px 0; /* Adiciona um espaçamento vertical entre os botões */
+        padding: 10px; /* Adiciona um padding interno, se necessário */
+        box-sizing: border-box; /* Inclui padding e borda na largura total */
+        text-align: center; /* Centraliza o texto dentro do botão */
+        display: flex; /* Ativa o flexbox para o botão */
+        justify-content: center; /* Centraliza o texto horizontalmente */
+        align-items: center; /* Centraliza o texto verticalmente */
+    }
+}
+
+
 
