@@ -1,14 +1,16 @@
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap');
 
+/* Variáveis Globais */
 :root {
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #BF0D18;
-
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
 
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +20,12 @@
 body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
 }
 
+/* Cabeçalho */
 .cabecalho {
-    padding: 2% 0% 0% 8%;
+    padding: 2% 0 0 8%;
 }
 
 .cabecalho__menu {
@@ -30,13 +34,13 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
 }
 
+/* Container Principal */
 .container-principal {
     padding: 5% 8%;
     display: flex;
@@ -47,7 +51,6 @@ body {
 
 .container-principal__conteudo {
     width: 50%;
-    margin-right: 58px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,9 +68,9 @@ body {
 
 .container-principal__conteudo__texto {
     font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
 }
 
+/* Links */
 .container-principal__links {
     display: flex;
     flex-direction: column;
@@ -94,16 +97,11 @@ body {
     padding: 15px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
-    font-family: var(--fonte-secundaria);
     transition: background 0.3s;
 }
 
 .container-principal__links__navegacao:hover {
-    background-color: #BF0D18;
-}
-
-.container-principal__links__navegacao:hover i {
-    color: #FFFFFF;
+    background-color: var(--cor-terciaria);
 }
 
 .container-principal__links__navegacao i {
@@ -111,160 +109,62 @@ body {
     color: var(--cor-terciaria);
 }
 
+/* Imagens */
 .imagem-principal {
     width: 488px;
     height: 550px;
     border-radius: 16px;
 }
 
-/* .estrela-vermelha {
-    position: absolute;
-    top: 324px;
-    right: 160px;
-    z-index: 3;
-}
-
-.borda-vermelha {
-    position: absolute;
-    z-index: 1;
-    width: 466px;
-    height: 526px;
-    left: 802px;
-    top: 159px;
-}
-
-.efeito-visual1 {
-    position: absolute;
-    top: 358px;
-    right: 187px;
-    z-index: 3;
-}
-
-.efeito-visual2 {
-    position: absolute;
-    right: 174px;
-    top: 668px;
-    z-index: 3;
-} */
-
-.container-principal__imagem {
-    width: 50%;
-}
-
+/* Rodapé */
 .rodape {
     padding: 24px;
     color: var(--cor-secundaria);
     background-color: var(--cor-terciaria);
     text-align: center;
-    font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-@media (max-width: 480px) { /* Ajuste a largura conforme necessário */
-    
+/* Responsividade */
+@media (max-width: 800px) {
     .cabecalho {
         padding: 10%;
     }
-    .cabecalho__menu {
-        display: flex;
-        justify-content: center; /* Centraliza os links */
-        flex-wrap: wrap; /* Permite que os links se movam para a linha seguinte se necessário */
-    }
-
-    .container-principal {
-        display: flex;
-        flex-direction: column-reverse; /* Alinha os itens em coluna */
-        align-items: center; /* Centraliza os itens horizontalmente */
-        padding: 5% 5%;
-    }
-
-    .container-principal__conteudo {
-        width: 100%; /* Faz o conteúdo ocupar toda a largura */
-        max-width: 90%; /* Limita a largura para não ficar muito esticado */
-        text-align: center; /* Centraliza o texto */
-        margin: 0 auto; /* Garante que fique centralizado */
-    }
-
-    .container-principal__conteudo__titulo {
-        font-size: 25px;
-    }
-
-    .imagem-principal {
-        width: 100%; /* Faz a imagem ocupar toda a largura */
-        height: auto; /* Mantém a proporção da imagem */
-    }
-
-    .container-principal__links {
-        display: flex; /* Ativa o flexbox */
-        flex-direction: column; /* Alinha os botões em coluna */
-        align-items: center; /* Centraliza os botões horizontalmente */
-    }
-
-    .container-principal__links__navegacao {
-        width: 378px; /* Define a largura do botão */
-        height: 68px; /* Define a altura do botão */
-        margin: 10px 0; /* Adiciona um espaçamento vertical entre os botões */
-        padding: 10px; /* Adiciona um padding interno, se necessário */
-        box-sizing: border-box; /* Inclui padding e borda na largura total */
-        text-align: center; /* Centraliza o texto dentro do botão */
-        display: flex; /* Ativa o flexbox para o botão */
-        justify-content: center; /* Centraliza o texto horizontalmente */
-        align-items: center; /* Centraliza o texto verticalmente */
-    }
-}
-
-@media (max-width: 800px) {  
-    .cabecalho {
-        padding: 10%;
-    }
-
     .cabecalho__menu {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
-
     .container-principal {
-        display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        padding: 5% 5%;
+        padding: 5%;
     }
-
     .container-principal__conteudo {
         width: 100%;
         max-width: 90%;
         text-align: center;
-        margin: 0 auto;
     }
-
     .container-principal__conteudo__titulo {
-        font-size: 28px; /* Um pouco maior para telas de tablet */
+        font-size: 28px;
     }
-
     .imagem-principal {
-        width: 90%; /* Mantém a imagem um pouco menor que no mobile */
+        width: 90%;
         height: auto;
     }
-
-    .container-principal__links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .container-principal__links__navegacao {
-        width: 400px; /* Pequeno ajuste na largura dos botões */
+        width: 400px;
         height: 72px;
-        margin: 12px 0;
-        padding: 12px;
-        box-sizing: border-box;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
 
-
+@media (max-width: 480px) {
+    .container-principal__conteudo__titulo {
+        font-size: 25px;
+    }
+    .container-principal__links__navegacao {
+        width: 378px;
+        height: 68px;
+    }
+}
