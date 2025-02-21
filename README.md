@@ -32,5 +32,5 @@ Acesse o projeto online: [Portfólio Profissional](https://portfolioprofissional
 
 ---
 
-Este projeto foi desenvolvido dentro da minha Imersão Alura.
+Este projeto foi desenvolvido dentro da Imersão Alura.
 
