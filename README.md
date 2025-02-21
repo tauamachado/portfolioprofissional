@@ -5,6 +5,7 @@
 Este projeto é uma Landing Page desenvolvida em **HTML** e **CSS**, com o objetivo de apresentar brevemente o desenvolvedor e disponibilizar links de contato importantes.
 
 ## Captura de Tela
+![Portifólio Profissional](./assets/printPortifólio.jpeg)
 
 
 
