@@ -32,5 +32,5 @@ Acesse o projeto online: [Portfólio Profissional](https://portfolioprofissional
 
 ---
 
-Este projeto foi desenvolvido com o objetivo de facilitar a apresentação profissional e conectar-se com potenciais clientes e parceiros.
+Este projeto foi desenvolvido dentro da minha Imersão Alura.
 
